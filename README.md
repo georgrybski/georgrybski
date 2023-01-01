@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=georgrybski&label=Profile%20views&color=0e75b6&style=flat" alt="georgrybski" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=georgrybski" alt="georgrybski" /></a> </p>
-
 - 🌱 I’m currently learning **Spring, Spring Boot, Maven, MySQL, PostgreSQL**
 
 - 📫 How to reach me **rybski.georg@gmail.com**
