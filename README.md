@@ -24,3 +24,5 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=georgrybski&" alt="georgrybski" /></p>
 
+  ![Snake animation](https://github.com/georgrybski/georgrybski/blob/output/github-contribution-grid-snake.svg)
+
