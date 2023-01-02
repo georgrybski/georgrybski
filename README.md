@@ -1,8 +1,6 @@
 <h1 align="center">Hi, I'm Georg Rybski</h1>
 <h3 align="center">Back-End Developer, B.Eng Software Engieering Student, B.Pharm Graduate</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=georgrybski&label=Profile%20views&color=0e75b6&style=flat" alt="georgrybski" /> </p>
-
 - 🌱 I’m currently learning **Spring, Spring Boot, Maven, MySQL, PostgreSQL**
 
 - 📫 How to reach me **rybski.georg@gmail.com**
