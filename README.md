@@ -16,7 +16,7 @@
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=georgrybski"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=2"/>
 </div>
-  
+
 <div align="center">
   <img src="https://github.com/georgrybski/georgrybski/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" width="image-width" 
 </div>
