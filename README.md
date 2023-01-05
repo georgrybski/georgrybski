@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Georg Rybski</h1>
-<h3 align="center">Back-End Developer, B.Eng Software Engieering Student, B.Pharm Graduate</h3>
+<h3 align="center">Back-End Developer, B.Eng Software Engineering Student, B.Pharm Graduate</h3>
 
 <h3 align="center">Find me here:</h3>
 <p align="center">
