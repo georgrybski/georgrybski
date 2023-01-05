@@ -3,7 +3,7 @@
 
 <h3 align="center">Find me here:</h3>
 <p align="center">
-<a href="https://linkedin.com/in/georg-rybski" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="georg-rybski" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/georg-rybski" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="georg-rybski" height="30" width="40" /></a>
 </p>
 
 <h3 align="center">Languages and Tools:</h3>
@@ -11,9 +11,9 @@
 
 <h3 align="center">Badges and certifications:</h3>
 <p align="center">
-<a href="https://www.credly.com/users/georgrybski/badges" target="blank"><img align="center" src="https://info.credly.com/hubfs/Credly%20Atos%20Web%20Assets/Credly%20Logos/Credly_Pearson_Logo_Orange.svg" "credly-badges" height="50" width="60"/></a> 
-<a href="https://www.hackerrank.com/georgrybski" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="georgrybski" height="38" width="50"/></a>
-<a href="https://www.cloudskillsboost.google/public_profiles/59991177-da3e-4cc9-8cea-f7c1c824abb1" target="blank"><img align="center"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="google-cloud-skills-boost" height="43" width="57"/></a>
+<a href="https://www.credly.com/users/georgrybski/badges" target="_blank"><img align="center" src="https://info.credly.com/hubfs/Credly%20Atos%20Web%20Assets/Credly%20Logos/Credly_Pearson_Logo_Orange.svg" "credly-badges" height="50" width="60"/></a> 
+<a href="https://www.hackerrank.com/georgrybski" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="georgrybski" height="38" width="50"/></a>
+<a href="https://www.cloudskillsboost.google/public_profiles/59991177-da3e-4cc9-8cea-f7c1c824abb1" target="_blank"><img align="center"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="google-cloud-skills-boost" height="43" width="57"/></a>
 </p>
 
 ##
