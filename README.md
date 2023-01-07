@@ -28,5 +28,5 @@
 ##  
 
 <div align="center">
-  <img src="https://github.com/georgrybski/georgrybski/blob/output/github-contribution-grid-snake.gif" alt="Snake animation" width="image-width" 
+  <img src="https://github.com/georgrybski/georgrybski/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" width="image-width" 
 </div>
