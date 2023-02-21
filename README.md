@@ -22,7 +22,7 @@
   <a href="https://github.com/georgrybski">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=georgrybski&show_icons=true&include_all_commits=true&count_private=true"/>
       <img height="180em" src="https://streak-stats.demolab.com/?user=georgrybski"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=2"/>
+  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=4"/>
 </div>
   
 ##  
