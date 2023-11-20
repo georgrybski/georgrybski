@@ -19,11 +19,28 @@
 ##
 
 <div align="center">
-  <a href="https://github.com/georgrybski">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=georgrybski&show_icons=true&include_all_commits=true&count_private=true"/>
-      <img height="180em" src="https://streak-stats.demolab.com/?user=georgrybski"/>
-    <br>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=6"/>
+  
+  <!-- general stats -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=georgrybski&show_icons=true&include_all_commits=true&count_private=true&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=georgrybski&show_icons=true&include_all_commits=true&count_private=true&theme=light">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=georgrybski&show_icons=true&include_all_commits=true&count_private=true&theme=light"/>
+  </picture>
+  
+  <!-- streaks -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=georgrybski&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=georgrybski&theme=light">
+    <img height="180em" src="https://streak-stats.demolab.com?user=georgrybski&theme=light"/>
+  </picture>
+  
+  <!-- most used languages -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=6&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=6&theme=light">
+    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=georgrybski&layout=compact&langs_count=6&theme=light"/>
+  </picture>
+
 </div>
   
 ##  
