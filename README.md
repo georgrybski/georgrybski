@@ -15,7 +15,7 @@ class Georg extends SoftwareEngineer {
         this.languages = ["Java", "TypeScript", "JavaScript", "SQL"];
         this.frameworks = ["Spring", "Angular", "Jakarta EE", "Quarkus"];
         this.systemDesign = ["RESTful APIs", "Microservices", "Design Patterns"];
-        this.currentProject = "Enhance ePol system for Brazilian Federal Police";
+        this.currentProject = "Enhance ePol system for the Brazilian Federal Police";
         this.goal = "Continue to learn and grow in all things tech";
     }
 }
