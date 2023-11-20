@@ -26,21 +26,24 @@ class Georg extends SoftwareEngineer {
 
 <h3 align="center">Certifications and Socials:</h3>
 <div align="center">
-
+    
   <a href="https://linkedin.com/in/georg-rybski" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="georg-rybski" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="georg-rybski-linkedin" height="33" width="44" />
   </a>
-
-  <a href="https://www.credly.com/users/georgrybski/badges" target="_blank">
-    <img align="center" src="https://info.credly.com/hubfs/Credly%20Atos%20Web%20Assets/Credly%20Logos/Credly_Pearson_Logo_Orange.svg" "credly-badges" height="50" width="60"/>
+  &nbsp;
+  &nbsp;
+  <a href="https://www.credly.com/users/georgrybski/badges" target="_blank" >
+    <img align="center" src="https://info.credly.com/hubfs/Credly%20Atos%20Web%20Assets/Credly%20Logos/Credly_Pearson_Logo_Orange.svg" alt="credly-badges" height="55" width="66"/>
   </a>
-  
+  &nbsp;
+  &nbsp;
   <a href="https://www.hackerrank.com/georgrybski" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="georgrybski" height="38" width="50"/>
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="georg-rybski-hackerrank" height="38" width="50"/>
   </a>
-  
+  &nbsp;
+  &nbsp;
   <a href="https://www.cloudskillsboost.google/public_profiles/59991177-da3e-4cc9-8cea-f7c1c824abb1" target="_blank">
-    <img align="center"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="google-cloud-skills-boost" height="43" width="57"/>
+    <img align="center"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="georg-rybski-google-cloud-skills-boost" height="43" width="57"/>
   </a>
 </div>
 
