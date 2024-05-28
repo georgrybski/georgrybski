@@ -14,7 +14,8 @@ class Georg extends SoftwareEngineer {
     constructor() {
         super();
         this.languages = ["Java", "TypeScript", "JavaScript", "SQL"];
-        this.frameworks = ["Spring", "Angular", "Jakarta EE", "Quarkus"];
+        this.frameworks = ["Spring", "NestJS", "Jakarta EE", "Quarkus", "Angular"];
+        this.databases = ["PostgreSQL", "Redis", "DynamoDB"]
         this.systemDesign = ["RESTful APIs", "Microservices", "Design Patterns"];
         this.goal = "Continue to learn and grow in all things tech";
     }
