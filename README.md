@@ -2,24 +2,21 @@
 
 [//]: # (<h3 align="center">Full Stack Developer, B.Eng Software Engineering Student, B.Pharm Graduate</h3>)
 
-```typescript
-class Georg extends SoftwareEngineer {
-
-    private languages: string[];
-    private frameworks: string[];
-    private systemDesign: string[];
-    private currentProject: string;
-    private goal: string;
-
-    constructor() {
-        super();
-        this.languages = ["Java", "TypeScript", "JavaScript", "SQL"];
-        this.frameworks = ["Spring", "NestJS", "Jakarta EE", "Quarkus", "Angular"];
-        this.databases = ["PostgreSQL", "Redis", "DynamoDB"]
-        this.systemDesign = ["RESTful APIs", "Microservices", "Design Patterns"];
-        this.goal = "Continue to learn and grow in all things tech";
+```rust
+impl Georg {
+    fn new() -> Self {
+        Georg {
+            languages: &["Java", "TypeScript", "JavaScript", "Rust", "SQL"],
+            frameworks: &["Spring", "NestJS", "Jakarta EE", "Quarkus", "Angular"],
+            databases: &["PostgreSQL", "Redis", "DynamoDB"],
+            system_design: &["RESTful APIs", "Microservices", "Design Patterns"],
+            current_project: "Building efficient and scalable software solutions",
+            goal: "Continue to learn and grow in all things tech",
+        }
     }
 }
+
+let software_engineer = Georg::new();
 ```
 
 ##  
