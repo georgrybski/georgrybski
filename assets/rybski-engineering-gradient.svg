@@ -1,0 +1,442 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Georg Rybski | Software engineer</title>
+  <desc id="desc">
+    Systems that let software act. Full-stack / agentic systems / security.
+    Build what builds. Own what follows. Define policy, scope authority,
+    delegate work, validate results. Delegated work has its own boundary;
+    validation stays outside it. TypeScript / Rust / Nix / Linux.
+  </desc>
+
+  <defs>
+    <linearGradient
+      id="page-gradient"
+      gradientUnits="userSpaceOnUse"
+      x1="60"
+      y1="60"
+      x2="1140"
+      y2="680"
+    >
+      <stop offset="0%" class="grad-start"/>
+      <stop offset="48%" class="grad-mid"/>
+      <stop offset="100%" class="grad-end"/>
+    </linearGradient>
+
+    <linearGradient
+      id="step-gradient"
+      gradientUnits="userSpaceOnUse"
+      x1="632"
+      y1="470"
+      x2="908"
+      y2="588"
+    >
+      <stop offset="0%" class="grad-start"/>
+      <stop offset="48%" class="grad-mid"/>
+      <stop offset="100%" class="grad-end"/>
+    </linearGradient>
+
+    <marker
+      id="arrow"
+      viewBox="0 0 10 10"
+      refX="8"
+      refY="5"
+      markerWidth="6.5"
+      markerHeight="6.5"
+      orient="auto"
+    >
+      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
+    </marker>
+  </defs>
+
+  <style>
+    .bg {
+      fill: #ffffff;
+    }
+
+    .frame,
+    .node {
+      fill: #f6f8fa;
+      stroke: #c8d1db;
+      stroke-width: 1.5;
+    }
+
+    .hairline {
+      stroke: #c8d1db;
+      stroke-width: 1.5;
+    }
+
+    .flow {
+      stroke: #b1bac4;
+      stroke-width: 1.5;
+    }
+
+    .arrow {
+      fill: #b1bac4;
+    }
+
+    /*
+      Large composition text samples the page-wide gradient.
+    */
+    .gradient-text {
+      fill: url(#page-gradient);
+    }
+
+    /*
+      Selected step samples its own complete gradient field.
+    */
+    .selected-node {
+      fill: #f6f8fa;
+      stroke: url(#step-gradient);
+      stroke-width: 2.5;
+    }
+
+    .selected-text {
+      fill: url(#step-gradient);
+    }
+
+    .selected-flow {
+      fill: none;
+      stroke: url(#step-gradient);
+      stroke-width: 2;
+    }
+
+    .selected-arrow {
+      fill: url(#step-gradient);
+    }
+
+    .primary {
+      fill: #1f2328;
+    }
+
+    .secondary {
+      fill: #57606a;
+    }
+
+    .accent {
+      fill: #0969da;
+    }
+
+    /* Shared palette for both gradients. */
+    .grad-start {
+      stop-color: #0969da;
+    }
+
+    .grad-mid {
+      stop-color: #8250df;
+    }
+
+    .grad-end {
+      stop-color: #cf222e;
+    }
+
+    text {
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Liberation Mono",
+        "Courier New",
+        monospace;
+    }
+
+    .signature {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .headline {
+      font-size: 46px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .role {
+      font-size: 24px;
+    }
+
+    .statement {
+      font-size: 38px;
+      font-weight: 600;
+      letter-spacing: -0.45px;
+    }
+
+    .node-title {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .node-sub {
+      font-size: 23px;
+    }
+
+    .footer {
+      font-size: 22px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .bg {
+        fill: #0d1117;
+      }
+
+      .frame,
+      .node {
+        fill: #161b22;
+        stroke: #3a424c;
+      }
+
+      .selected-node {
+        fill: #161b22;
+      }
+
+      .hairline {
+        stroke: #3a424c;
+      }
+
+      .flow {
+        stroke: #5b6570;
+      }
+
+      .arrow {
+        fill: #5b6570;
+      }
+
+      .primary {
+        fill: #f0f6fc;
+      }
+
+      .secondary {
+        fill: #8b949e;
+      }
+
+      .accent {
+        fill: #58a6ff;
+      }
+
+      .grad-start {
+        stop-color: #58a6ff;
+      }
+
+      .grad-mid {
+        stop-color: #bc8cff;
+      }
+
+      .grad-end {
+        stop-color: #ff7b72;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .signature {
+        font-size: 32px;
+      }
+
+      .headline {
+        font-size: 56px;
+      }
+
+      .role {
+        font-size: 36px;
+      }
+
+      .statement {
+        font-size: 48px;
+      }
+
+      .node-title {
+        font-size: 34px;
+      }
+
+      .node-sub {
+        font-size: 30px;
+      }
+
+      .footer {
+        font-size: 32px;
+      }
+    }
+  </style>
+
+  <rect width="1200" height="740" rx="24" class="bg"/>
+  <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
+
+  <text x="60" y="86" class="signature accent">
+    georg rybski
+  </text>
+
+  <text x="60" y="147" class="headline gradient-text">
+    systems that let software act
+  </text>
+
+  <text x="60" y="207" class="role secondary">
+    full-stack / agentic systems / security
+  </text>
+
+  <line
+    x1="60"
+    y1="247"
+    x2="1140"
+    y2="247"
+    class="hairline"
+  />
+
+  <text x="60" y="331" class="statement gradient-text">
+    build what builds.
+  </text>
+
+  <text x="60" y="384" class="statement gradient-text">
+    own what follows.
+  </text>
+
+  <rect
+    x="60"
+    y="470"
+    width="222"
+    height="118"
+    rx="12"
+    class="node"
+  />
+
+  <text
+    x="84"
+    y="515"
+    class="node-title primary"
+  >
+    define
+  </text>
+
+  <text
+    x="84"
+    y="555"
+    class="node-sub secondary"
+  >
+    policy
+  </text>
+
+  <line
+    x1="282"
+    y1="529"
+    x2="334"
+    y2="529"
+    class="flow"
+    marker-end="url(#arrow)"
+  />
+
+  <rect
+    x="346"
+    y="470"
+    width="222"
+    height="118"
+    rx="12"
+    class="node"
+  />
+
+  <text
+    x="370"
+    y="515"
+    class="node-title primary"
+  >
+    scope
+  </text>
+
+  <text
+    x="370"
+    y="555"
+    class="node-sub secondary"
+  >
+    authority
+  </text>
+
+  <line
+    x1="568"
+    y1="529"
+    x2="620"
+    y2="529"
+    class="flow"
+    marker-end="url(#arrow)"
+  />
+
+  <rect
+    x="632"
+    y="470"
+    width="222"
+    height="118"
+    rx="12"
+    class="selected-node"
+  />
+
+  <text
+    x="656"
+    y="515"
+    class="node-title selected-text"
+  >
+    delegate
+  </text>
+
+  <text
+    x="656"
+    y="555"
+    class="node-sub secondary"
+  >
+    work
+  </text>
+
+  <!-- Selected outgoing transition -->
+  <line
+    x1="854"
+    y1="529"
+    x2="896"
+    y2="529"
+    class="selected-flow"
+  />
+
+  <path
+    d="M 896 523 L 908 529 L 896 535 Z"
+    class="selected-arrow"
+  />
+
+  <!-- validate -->
+  <rect
+    x="918"
+    y="470"
+    width="222"
+    height="118"
+    rx="12"
+    class="node"
+  />
+
+  <text
+    x="942"
+    y="515"
+    class="node-title primary"
+  >
+    validate
+  </text>
+
+  <text
+    x="942"
+    y="555"
+    class="node-sub secondary"
+  >
+    results
+  </text>
+
+  <!-- Footer -->
+  <line
+    x1="60"
+    y1="637"
+    x2="1140"
+    y2="637"
+    class="hairline"
+  />
+
+  <text
+    x="60"
+    y="686"
+    class="footer secondary"
+  >
+    typescript / rust / nix / linux
+  </text>
+</svg>
