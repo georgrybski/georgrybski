@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/rybskiworks">
-    <img src="./assets/rybski-engineering-surface.svg" width="100%" alt="Georg Rybski. Systems that let software act. Full-stack / agentic systems / security. Build what builds. Own what follows. Define policy, scope authority, delegate work, validate results. TypeScript / Rust / Nix / Linux." />
+    <img src="./assets/rybski-engineering-card.svg" width="100%" alt="Georg Rybski. Systems that let software act. Full-stack / agentic systems / security. Build what builds. Own what follows. Define policy, scope authority, delegate work, validate results. TypeScript / Rust / Nix / Linux." />
   </a>
 </p>
 
