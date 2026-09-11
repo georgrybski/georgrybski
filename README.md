@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/engineering-surface.svg" width="840" alt="Georg Rybski. Software Engineer. Full-stack / systems / automation. Build what builds. Own what follows. Define, bound, delegate, validate. Delegated execution has its own boundary; validation stays outside it. Rust / Nix / Linux / TypeScript." />
+  <a href="https://github.com/rybskiworks">
+    <img src="./assets/engineering-surface.svg" width="100%" alt="Georg Rybski. Systems that let software act. Full-stack / agentic systems / security. Build what builds. Own what follows. Define policy, scope authority, delegate work, validate results. TypeScript / Rust / Nix / Linux." />
+  </a>
 </p>
 
 <br>
