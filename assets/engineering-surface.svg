@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
-  <title id="title">Georg Rybski, software engineer</title>
-  <desc id="desc">A minimal architecture diagram showing intent flowing through policy and an isolated runtime into execution and change.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Georg Rybski | Software engineer</title>
+  <desc id="desc">Systems that let software act. Full-stack / agentic systems / security. Build what builds. Own what follows. Define policy, scope authority, delegate work, validate results. Delegated work has its own boundary; validation stays outside it. TypeScript / Rust / Nix / Linux.</desc>
 
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
     </marker>
   </defs>
@@ -14,18 +14,18 @@
     .hairline { stroke: #d0d7de; }
     .flow { stroke: #8c959f; }
     .arrow { fill: #8c959f; }
+    .boundary { fill: none; stroke: #0969da; stroke-width: 1.5; stroke-dasharray: 4 6; opacity: 0.4; }
     .primary { fill: #1f2328; }
     .secondary { fill: #57606a; }
     .accent { fill: #0969da; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    .kicker { font-size: 14px; font-weight: 700; letter-spacing: 2.2px; }
-    .name { font-size: 38px; font-weight: 700; letter-spacing: -1px; }
-    .role { font-size: 17px; }
-    .statement { font-size: 25px; font-weight: 600; letter-spacing: -0.45px; }
-    .node-title { font-size: 14px; font-weight: 700; letter-spacing: 1.5px; }
-    .node-sub { font-size: 13px; }
-    .footer { font-size: 13px; }
-    .micro { font-size: 11px; letter-spacing: 1.15px; }
+    .signature { font-size: 26px; font-weight: 700; letter-spacing: 1.2px; }
+    .headline { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
+    .role { font-size: 24px; }
+    .statement { font-size: 38px; font-weight: 600; letter-spacing: -0.45px; }
+    .node-title { font-size: 30px; font-weight: 700; letter-spacing: 0.5px; }
+    .node-sub { font-size: 23px; }
+    .footer { font-size: 22px; }
 
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
@@ -33,65 +33,65 @@
       .hairline { stroke: #30363d; }
       .flow { stroke: #6e7681; }
       .arrow { fill: #6e7681; }
+      .boundary { stroke: #58a6ff; }
       .primary { fill: #f0f6fc; }
       .secondary { fill: #8b949e; }
       .accent { fill: #58a6ff; }
     }
+
+    /* Preserve the composition while making narrow embeds easier to read. */
+    @media (max-width: 520px) {
+      .signature { font-size: 32px; }
+      .headline { font-size: 56px; }
+      .role { font-size: 36px; }
+      .statement { font-size: 48px; }
+      .node-title { font-size: 34px; }
+      .node-sub { font-size: 30px; }
+      .footer { font-size: 32px; }
+    }
   </style>
 
-  <rect width="1200" height="540" rx="24" class="bg"/>
-  <rect x="22" y="22" width="1156" height="496" rx="18" class="frame" stroke-width="1"/>
+  <rect width="1200" height="740" rx="24" class="bg"/>
+  <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
 
-  <text x="60" y="67" class="kicker accent">GEORG RYBSKI / SOFTWARE ENGINEER</text>
-  <text x="60" y="118" class="name primary">systems that let software act</text>
-  <text x="60" y="150" class="role secondary">developer infrastructure / isolated runtimes / automation</text>
+  <text x="60" y="86" class="signature accent">georg rybski</text>
+  <text x="60" y="147" class="headline primary">systems that let software act</text>
+  <text x="60" y="207" class="role secondary">full-stack / agentic systems / security</text>
+  <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
 
-  <line x1="60" y1="179" x2="1140" y2="179" class="hairline" stroke-width="1"/>
+  <text x="60" y="331" class="statement primary">build what builds.</text>
+  <text x="60" y="384" class="statement primary">own what follows.</text>
 
-  <text x="60" y="220" class="statement primary">I build environments where software can do real work</text>
-  <text x="60" y="253" class="statement primary">without owning the machine.</text>
+  <!-- Equal cards, left-aligned labels, and two shared text baselines. -->
+  <g transform="translate(60 470)">
+    <rect width="222" height="118" rx="12" class="node"/>
+    <text x="24" y="45" class="node-title primary">define</text>
+    <text x="24" y="85" class="node-sub secondary">policy</text>
+  </g>
+  <line x1="294" y1="529" x2="334" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <g transform="translate(60 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">INTENT</text>
-    <text x="18" y="61" class="node-sub secondary">human</text>
+  <g transform="translate(346 470)">
+    <rect width="222" height="118" rx="12" class="node"/>
+    <text x="24" y="45" class="node-title primary">scope</text>
+    <text x="24" y="85" class="node-sub secondary">authority</text>
+  </g>
+  <line x1="580" y1="529" x2="620" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Validation deliberately remains outside the execution boundary. -->
+  <rect x="616" y="454" width="254" height="150" rx="18" class="boundary"/>
+  <g transform="translate(632 470)">
+    <rect width="222" height="118" rx="12" class="node"/>
+    <text x="24" y="45" class="node-title primary">delegate</text>
+    <text x="24" y="85" class="node-sub secondary">work</text>
+  </g>
+  <line x1="866" y1="529" x2="906" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(918 470)">
+    <rect width="222" height="118" rx="12" class="node"/>
+    <text x="24" y="45" class="node-title primary">validate</text>
+    <text x="24" y="85" class="node-sub secondary">results</text>
   </g>
 
-  <line x1="230" y1="339" x2="277" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(290 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">POLICY</text>
-    <text x="18" y="61" class="node-sub secondary">control plane</text>
-  </g>
-
-  <line x1="460" y1="339" x2="507" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(520 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">RUNTIME</text>
-    <text x="18" y="61" class="node-sub secondary">microVM</text>
-  </g>
-
-  <line x1="690" y1="339" x2="737" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(750 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">EXECUTION</text>
-    <text x="18" y="61" class="node-sub secondary">agent</text>
-  </g>
-
-  <line x1="920" y1="339" x2="967" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(980 293)">
-    <rect width="160" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">CHANGE</text>
-    <text x="18" y="61" class="node-sub secondary">git</text>
-  </g>
-
-  <line x1="60" y1="422" x2="1140" y2="422" class="hairline" stroke-width="1"/>
-
-  <text x="60" y="458" class="footer primary">focus: isolation / reproducibility / orchestration / black-box testing</text>
-  <text x="60" y="487" class="micro secondary">RUST   NIX   LINUX   TYPESCRIPT</text>
-  <text x="1140" y="487" text-anchor="end" class="micro secondary">BUILD / CONSTRAIN / VERIFY</text>
+  <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
+  <text x="60" y="686" class="footer secondary">typescript / rust / nix / linux</text>
 </svg>
