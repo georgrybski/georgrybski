@@ -9,29 +9,18 @@
 
   <defs>
     <linearGradient
-      id="page-gradient"
+      id="whole-card-gradient"
       gradientUnits="userSpaceOnUse"
-      x1="60"
-      y1="60"
-      x2="1140"
-      y2="680"
+      x1="22"
+      y1="22"
+      x2="1178"
+      y2="718"
     >
-      <stop offset="0%" class="grad-start"/>
-      <stop offset="48%" class="grad-mid"/>
-      <stop offset="100%" class="grad-end"/>
-    </linearGradient>
-
-    <linearGradient
-      id="step-gradient"
-      gradientUnits="userSpaceOnUse"
-      x1="632"
-      y1="470"
-      x2="908"
-      y2="588"
-    >
-      <stop offset="0%" class="grad-start"/>
-      <stop offset="48%" class="grad-mid"/>
-      <stop offset="100%" class="grad-end"/>
+      <stop offset="0%" class="grad-blue-edge"/>
+      <stop offset="28%" class="grad-blue-edge"/>
+      <stop offset="50%" class="grad-red-core"/>
+      <stop offset="72%" class="grad-blue-edge"/>
+      <stop offset="100%" class="grad-blue-edge"/>
     </linearGradient>
 
     <marker
@@ -73,58 +62,33 @@
       fill: #b1bac4;
     }
 
-    /*
-      Large composition text samples the page-wide gradient.
-    */
-    .gradient-text {
-      fill: url(#page-gradient);
-    }
-
-    /*
-      Selected step samples its own complete gradient field.
-    */
-    .selected-node {
-      fill: #f6f8fa;
-      stroke: url(#step-gradient);
-      stroke-width: 2.5;
-    }
-
-    .selected-text {
-      fill: url(#step-gradient);
-    }
-
-    .selected-flow {
-      fill: none;
-      stroke: url(#step-gradient);
-      stroke-width: 2;
-    }
-
-    .selected-arrow {
-      fill: url(#step-gradient);
-    }
-
     .primary {
       fill: #1f2328;
     }
 
     .secondary {
-      fill: #57606a;
+      fill: #48515b;
     }
 
-    .accent {
-      fill: #0969da;
+    .gradient-text {
+      fill: url(#whole-card-gradient);
     }
 
-    /* Shared palette for both gradients. */
-    .grad-start {
+    .selected-node {
+      fill: #f6f8fa;
+      stroke: url(#whole-card-gradient);
+      stroke-width: 2.5;
+    }
+
+    .selected-sub {
+      fill: url(#whole-card-gradient);
+    }
+
+    .grad-blue-edge {
       stop-color: #0969da;
     }
 
-    .grad-mid {
-      stop-color: #8250df;
-    }
-
-    .grad-end {
+    .grad-red-core {
       stop-color: #cf222e;
     }
 
@@ -172,6 +136,11 @@
       font-size: 23px;
     }
 
+    .node-sub-strong {
+      font-size: 23px;
+      font-weight: 700;
+    }
+
     .footer {
       font-size: 22px;
     }
@@ -208,22 +177,14 @@
       }
 
       .secondary {
-        fill: #8b949e;
+        fill: #a1abb5;
       }
 
-      .accent {
-        fill: #58a6ff;
-      }
-
-      .grad-start {
+      .grad-blue-edge {
         stop-color: #58a6ff;
       }
 
-      .grad-mid {
-        stop-color: #bc8cff;
-      }
-
-      .grad-end {
+      .grad-red-core {
         stop-color: #ff7b72;
       }
     }
@@ -249,7 +210,8 @@
         font-size: 34px;
       }
 
-      .node-sub {
+      .node-sub,
+      .node-sub-strong {
         font-size: 30px;
       }
 
@@ -262,58 +224,19 @@
   <rect width="1200" height="740" rx="24" class="bg"/>
   <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
 
-  <text x="60" y="86" class="signature accent">
-    georg rybski
-  </text>
+  <text x="60" y="86" class="signature gradient-text">georg rybski</text>
 
-  <text x="60" y="147" class="headline gradient-text">
-    systems that let software act
-  </text>
+  <text x="60" y="147" class="headline primary">systems that let software act</text>
+  <text x="60" y="207" class="role secondary">full-stack / agentic systems / security</text>
 
-  <text x="60" y="207" class="role secondary">
-    full-stack / agentic systems / security
-  </text>
+  <line x1="60" y1="247" x2="1140" y2="247" class="hairline"/>
 
-  <line
-    x1="60"
-    y1="247"
-    x2="1140"
-    y2="247"
-    class="hairline"
-  />
+  <text x="60" y="331" class="statement primary">build what builds.</text>
+  <text x="60" y="384" class="statement primary">own what follows.</text>
 
-  <text x="60" y="331" class="statement gradient-text">
-    build what builds.
-  </text>
-
-  <text x="60" y="384" class="statement gradient-text">
-    own what follows.
-  </text>
-
-  <rect
-    x="60"
-    y="470"
-    width="222"
-    height="118"
-    rx="12"
-    class="node"
-  />
-
-  <text
-    x="84"
-    y="515"
-    class="node-title primary"
-  >
-    define
-  </text>
-
-  <text
-    x="84"
-    y="555"
-    class="node-sub secondary"
-  >
-    policy
-  </text>
+  <rect x="60" y="470" width="222" height="118" rx="12" class="node"/>
+  <text x="84" y="515" class="node-title primary">define</text>
+  <text x="84" y="555" class="node-sub secondary">policy</text>
 
   <line
     x1="282"
@@ -324,30 +247,9 @@
     marker-end="url(#arrow)"
   />
 
-  <rect
-    x="346"
-    y="470"
-    width="222"
-    height="118"
-    rx="12"
-    class="node"
-  />
-
-  <text
-    x="370"
-    y="515"
-    class="node-title primary"
-  >
-    scope
-  </text>
-
-  <text
-    x="370"
-    y="555"
-    class="node-sub secondary"
-  >
-    authority
-  </text>
+  <rect x="346" y="470" width="222" height="118" rx="12" class="node"/>
+  <text x="370" y="515" class="node-title primary">scope</text>
+  <text x="370" y="555" class="node-sub secondary">authority</text>
 
   <line
     x1="568"
@@ -358,8 +260,21 @@
     marker-end="url(#arrow)"
   />
 
+  <rect x="632" y="470" width="222" height="118" rx="12" class="node"/>
+  <text x="656" y="515" class="node-title primary">delegate</text>
+  <text x="656" y="555" class="node-sub secondary">work</text>
+
+  <line
+    x1="854"
+    y1="529"
+    x2="906"
+    y2="529"
+    class="flow"
+    marker-end="url(#arrow)"
+  />
+
   <rect
-    x="632"
+    x="918"
     y="470"
     width="222"
     height="118"
@@ -367,76 +282,12 @@
     class="selected-node"
   />
 
-  <text
-    x="656"
-    y="515"
-    class="node-title selected-text"
-  >
-    delegate
-  </text>
+  <text x="942" y="515" class="node-title primary">validate</text>
+  <text x="942" y="555" class="node-sub-strong selected-sub">results</text>
 
-  <text
-    x="656"
-    y="555"
-    class="node-sub secondary"
-  >
-    work
-  </text>
+  <line x1="60" y1="637" x2="1140" y2="637" class="hairline"/>
 
-  <!-- Selected outgoing transition -->
-  <line
-    x1="854"
-    y1="529"
-    x2="896"
-    y2="529"
-    class="selected-flow"
-  />
-
-  <path
-    d="M 896 523 L 908 529 L 896 535 Z"
-    class="selected-arrow"
-  />
-
-  <!-- validate -->
-  <rect
-    x="918"
-    y="470"
-    width="222"
-    height="118"
-    rx="12"
-    class="node"
-  />
-
-  <text
-    x="942"
-    y="515"
-    class="node-title primary"
-  >
-    validate
-  </text>
-
-  <text
-    x="942"
-    y="555"
-    class="node-sub secondary"
-  >
-    results
-  </text>
-
-  <!-- Footer -->
-  <line
-    x1="60"
-    y1="637"
-    x2="1140"
-    y2="637"
-    class="hairline"
-  />
-
-  <text
-    x="60"
-    y="686"
-    class="footer secondary"
-  >
+  <text x="60" y="686" class="footer secondary">
     typescript / rust / nix / linux
   </text>
 </svg>
