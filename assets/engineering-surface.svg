@@ -1,97 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
-  <title id="title">Georg Rybski, software engineer</title>
-  <desc id="desc">A minimal architecture diagram showing intent flowing through policy and an isolated runtime into execution and change.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Georg Rybski, full-stack software engineer</title>
+  <desc id="desc">Systems that let software act. Full-stack product engineering with TypeScript, Java, and SQL; developer infrastructure with Rust, Nix, and Linux. Intent flows through policy, an isolated runtime, autonomous building, and review. Give agents room to work, not the keys to everything.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
     </marker>
   </defs>
-
   <style>
     .bg { fill: #ffffff; }
-    .frame, .node { fill: #f6f8fa; stroke: #d0d7de; }
+    .frame { fill: #f6f8fa; stroke: #d0d7de; }
+    .node { fill: #ffffff; stroke: #d0d7de; }
     .hairline { stroke: #d0d7de; }
-    .flow { stroke: #8c959f; }
+    .flow { stroke: #8c959f; fill: none; }
     .arrow { fill: #8c959f; }
     .primary { fill: #1f2328; }
     .secondary { fill: #57606a; }
     .accent { fill: #0969da; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    .kicker { font-size: 14px; font-weight: 700; letter-spacing: 2.2px; }
-    .name { font-size: 38px; font-weight: 700; letter-spacing: -1px; }
-    .role { font-size: 17px; }
-    .statement { font-size: 25px; font-weight: 600; letter-spacing: -0.45px; }
-    .node-title { font-size: 14px; font-weight: 700; letter-spacing: 1.5px; }
-    .node-sub { font-size: 13px; }
-    .footer { font-size: 13px; }
-    .micro { font-size: 11px; letter-spacing: 1.15px; }
-
+    .kicker { font-size: 18px; font-weight: 700; letter-spacing: 1.5px; }
+    .name { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
+    .role { font-size: 22px; }
+    .lane-label { font-size: 17px; font-weight: 700; letter-spacing: 1.2px; }
+    .lane-title { font-size: 28px; font-weight: 600; letter-spacing: -0.6px; }
+    .stack { font-size: 20px; }
+    .statement { font-size: 28px; font-weight: 600; letter-spacing: -0.4px; }
+    .node-title { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+    .node-sub { font-size: 19px; }
+    .footer { font-size: 22px; }
+    .micro { font-size: 17px; letter-spacing: 0.8px; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
-      .frame, .node { fill: #161b22; stroke: #30363d; }
+      .frame { fill: #161b22; stroke: #30363d; }
+      .node { fill: #0d1117; stroke: #30363d; }
       .hairline { stroke: #30363d; }
-      .flow { stroke: #6e7681; }
-      .arrow { fill: #6e7681; }
+      .flow { stroke: #8b949e; }
+      .arrow { fill: #8b949e; }
       .primary { fill: #f0f6fc; }
-      .secondary { fill: #8b949e; }
+      .secondary { fill: #a3adb8; }
       .accent { fill: #58a6ff; }
     }
   </style>
 
-  <rect width="1200" height="540" rx="24" class="bg"/>
-  <rect x="22" y="22" width="1156" height="496" rx="18" class="frame" stroke-width="1"/>
+  <rect width="1200" height="740" rx="24" class="bg"/>
+  <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
 
-  <text x="60" y="67" class="kicker accent">GEORG RYBSKI / SOFTWARE ENGINEER</text>
-  <text x="60" y="118" class="name primary">systems that let software act</text>
-  <text x="60" y="150" class="role secondary">developer infrastructure / isolated runtimes / automation</text>
+  <text x="64" y="72" class="kicker accent">GEORG RYBSKI / FULL-STACK ENGINEER</text>
+  <text x="64" y="133" class="name primary">systems that let software act</text>
+  <text x="64" y="174" class="role secondary">interfaces, APIs, and the machinery underneath.</text>
+  <line x1="64" y1="205" x2="1136" y2="205" class="hairline"/>
 
-  <line x1="60" y1="179" x2="1140" y2="179" class="hairline" stroke-width="1"/>
+  <text x="64" y="241" class="lane-label accent">01 / PRODUCT</text>
+  <text x="64" y="281" class="lane-title primary">Build the software.</text>
+  <text x="64" y="315" class="stack secondary">TypeScript / Java / SQL</text>
+  <line x1="592" y1="233" x2="592" y2="318" class="hairline"/>
+  <text x="632" y="241" class="lane-label accent">02 / PLATFORM</text>
+  <text x="632" y="281" class="lane-title primary">Build what builds it.</text>
+  <text x="632" y="315" class="stack secondary">Rust / Nix / Linux</text>
+  <line x1="64" y1="347" x2="1136" y2="347" class="hairline"/>
 
-  <text x="60" y="220" class="statement primary">I build environments where software can do real work</text>
-  <text x="60" y="253" class="statement primary">without owning the machine.</text>
+  <text x="64" y="393" class="statement primary">I build environments where software can do real work</text>
+  <text x="64" y="433" class="statement primary">without owning the machine.</text>
 
-  <g transform="translate(60 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">INTENT</text>
-    <text x="18" y="61" class="node-sub secondary">human</text>
+  <!-- Equal 188-unit cards, 33-unit gaps, shared text baselines. -->
+  <g transform="translate(64 477)">
+    <rect width="188" height="112" rx="12" class="node"/>
+    <text x="94" y="40" text-anchor="middle" class="node-title primary">INTENT</text>
+    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">human</text>
+  </g>
+  <line x1="258" y1="533" x2="279" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g transform="translate(285 477)">
+    <rect width="188" height="112" rx="12" class="node"/>
+    <text x="94" y="40" text-anchor="middle" class="node-title primary">POLICY</text>
+    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">scoped access</text>
+  </g>
+  <line x1="479" y1="533" x2="500" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g transform="translate(506 477)">
+    <rect width="188" height="112" rx="12" class="node"/>
+    <text x="94" y="40" text-anchor="middle" class="node-title primary">RUNTIME</text>
+    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">microVMs</text>
+  </g>
+  <line x1="700" y1="533" x2="721" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g transform="translate(727 477)">
+    <rect width="188" height="112" rx="12" class="node"/>
+    <text x="94" y="40" text-anchor="middle" class="node-title primary">BUILD</text>
+    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">agents</text>
+  </g>
+  <line x1="921" y1="533" x2="942" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g transform="translate(948 477)">
+    <rect width="188" height="112" rx="12" class="node"/>
+    <text x="94" y="40" text-anchor="middle" class="node-title primary">REVIEW</text>
+    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">diffs + tests</text>
   </g>
 
-  <line x1="230" y1="339" x2="277" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(290 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">POLICY</text>
-    <text x="18" y="61" class="node-sub secondary">control plane</text>
-  </g>
-
-  <line x1="460" y1="339" x2="507" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(520 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">RUNTIME</text>
-    <text x="18" y="61" class="node-sub secondary">microVM</text>
-  </g>
-
-  <line x1="690" y1="339" x2="737" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(750 293)">
-    <rect width="170" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">EXECUTION</text>
-    <text x="18" y="61" class="node-sub secondary">agent</text>
-  </g>
-
-  <line x1="920" y1="339" x2="967" y2="339" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <g transform="translate(980 293)">
-    <rect width="160" height="92" rx="12" class="node"/>
-    <text x="18" y="34" class="node-title primary">CHANGE</text>
-    <text x="18" y="61" class="node-sub secondary">git</text>
-  </g>
-
-  <line x1="60" y1="422" x2="1140" y2="422" class="hairline" stroke-width="1"/>
-
-  <text x="60" y="458" class="footer primary">focus: isolation / reproducibility / orchestration / black-box testing</text>
-  <text x="60" y="487" class="micro secondary">RUST   NIX   LINUX   TYPESCRIPT</text>
-  <text x="1140" y="487" text-anchor="end" class="micro secondary">BUILD / CONSTRAIN / VERIFY</text>
+  <line x1="64" y1="623" x2="1136" y2="623" class="hairline"/>
+  <text x="64" y="663" class="footer primary">Give agents room to work, not the keys to everything.</text>
+  <text x="64" y="698" class="micro secondary">AUTONOMY BY DESIGN</text>
+  <text x="1136" y="698" text-anchor="end" class="micro secondary">LEAST PRIVILEGE BY DEFAULT</text>
 </svg>
