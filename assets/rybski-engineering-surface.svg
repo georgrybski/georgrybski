@@ -11,14 +11,17 @@
   <style>
     .bg { fill: #ffffff; }
     .frame, .node { fill: #f6f8fa; stroke: #d0d7de; }
-    .hairline { stroke: #d0d7de; }
-    .flow { stroke: #8c959f; }
-    .arrow { fill: #8c959f; }
+    .hairline, .flow { stroke: #d0d7de; }
+    .arrow { fill: #d0d7de; }
     .boundary { fill: none; stroke: #0969da; stroke-width: 1.5; stroke-dasharray: 4 6; opacity: 0.4; }
     .primary { fill: #1f2328; }
     .secondary { fill: #57606a; }
     .accent { fill: #0969da; }
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
     .signature { font-size: 26px; font-weight: 700; letter-spacing: 1.2px; }
     .headline { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
     .role { font-size: 24px; }
@@ -30,16 +33,14 @@
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; }
       .frame, .node { fill: #161b22; stroke: #30363d; }
-      .hairline { stroke: #30363d; }
-      .flow { stroke: #6e7681; }
-      .arrow { fill: #6e7681; }
+      .hairline, .flow { stroke: #30363d; }
+      .arrow { fill: #30363d; }
       .boundary { stroke: #58a6ff; }
       .primary { fill: #f0f6fc; }
       .secondary { fill: #8b949e; }
       .accent { fill: #58a6ff; }
     }
 
-    /* Preserve the composition while making narrow embeds easier to read. */
     @media (max-width: 520px) {
       .signature { font-size: 32px; }
       .headline { font-size: 56px; }
@@ -62,29 +63,27 @@
   <text x="60" y="331" class="statement primary">build what builds.</text>
   <text x="60" y="384" class="statement primary">own what follows.</text>
 
-  <!-- Equal cards, left-aligned labels, and two shared text baselines. -->
   <g transform="translate(60 470)">
     <rect width="222" height="118" rx="12" class="node"/>
     <text x="24" y="45" class="node-title primary">define</text>
     <text x="24" y="85" class="node-sub secondary">policy</text>
   </g>
-  <line x1="294" y1="529" x2="334" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="282" y1="529" x2="334" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <g transform="translate(346 470)">
     <rect width="222" height="118" rx="12" class="node"/>
     <text x="24" y="45" class="node-title primary">scope</text>
     <text x="24" y="85" class="node-sub secondary">authority</text>
   </g>
-  <line x1="580" y1="529" x2="620" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="568" y1="529" x2="620" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <!-- Validation deliberately remains outside the execution boundary. -->
   <rect x="616" y="454" width="254" height="150" rx="18" class="boundary"/>
   <g transform="translate(632 470)">
     <rect width="222" height="118" rx="12" class="node"/>
     <text x="24" y="45" class="node-title primary">delegate</text>
     <text x="24" y="85" class="node-sub secondary">work</text>
   </g>
-  <line x1="866" y1="529" x2="906" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="854" y1="529" x2="906" y2="529" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <g transform="translate(918 470)">
     <rect width="222" height="118" rx="12" class="node"/>
