@@ -1,99 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
-  <title id="title">Georg Rybski, full-stack software engineer</title>
-  <desc id="desc">Systems that let software act. Full-stack product engineering with TypeScript, Java, and SQL; developer infrastructure with Rust, Nix, and Linux. Intent flows through policy, an isolated runtime, autonomous building, and review. Give agents room to work, not the keys to everything.</desc>
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow"/>
-    </marker>
-  </defs>
+  <title id="title">Georg Rybski | Software Engineer</title>
+  <desc id="desc">Full-stack / systems / automation. Build what builds. Own what follows. Define, bound, delegate, validate. A fine enclosure surrounds delegated execution; validation stays outside it. Rust / Nix / Linux / TypeScript.</desc>
   <style>
-    .bg { fill: #ffffff; }
+    .background { fill: #ffffff; }
     .frame { fill: #f6f8fa; stroke: #d0d7de; }
-    .node { fill: #ffffff; stroke: #d0d7de; }
-    .hairline { stroke: #d0d7de; }
-    .flow { stroke: #8c959f; fill: none; }
-    .arrow { fill: #8c959f; }
+    .cell { fill: #ffffff; stroke: #d0d7de; }
+    .rule { fill: none; stroke: #d0d7de; }
+    .flow { fill: none; stroke: #8c959f; stroke-width: 1.6; }
+    .boundary { fill: none; stroke: #0969da; stroke-width: 1.5; stroke-dasharray: 4 6; opacity: 0.5; }
     .primary { fill: #1f2328; }
     .secondary { fill: #57606a; }
     .accent { fill: #0969da; }
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    .kicker { font-size: 18px; font-weight: 700; letter-spacing: 1.5px; }
-    .name { font-size: 46px; font-weight: 700; letter-spacing: -1px; }
-    .role { font-size: 22px; }
-    .lane-label { font-size: 17px; font-weight: 700; letter-spacing: 1.2px; }
-    .lane-title { font-size: 28px; font-weight: 600; letter-spacing: -0.6px; }
-    .stack { font-size: 20px; }
-    .statement { font-size: 28px; font-weight: 600; letter-spacing: -0.4px; }
-    .node-title { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
-    .node-sub { font-size: 19px; }
-    .footer { font-size: 22px; }
-    .micro { font-size: 17px; letter-spacing: 0.8px; }
+    .signature { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+    .profession { font-size: 50px; font-weight: 700; letter-spacing: 1px; }
+    .qualifier { font-size: 24px; }
+    .statement { font-size: 58px; font-weight: 600; letter-spacing: -1.2px; }
+    .answer { font-size: 62px; font-weight: 700; letter-spacing: -1.2px; }
+    .step { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+    .stack { font-size: 22px; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #0d1117; }
+      .background { fill: #0d1117; }
       .frame { fill: #161b22; stroke: #30363d; }
-      .node { fill: #0d1117; stroke: #30363d; }
-      .hairline { stroke: #30363d; }
+      .cell { fill: #0d1117; stroke: #30363d; }
+      .rule { stroke: #30363d; }
       .flow { stroke: #8b949e; }
-      .arrow { fill: #8b949e; }
+      .boundary { stroke: #58a6ff; }
       .primary { fill: #f0f6fc; }
       .secondary { fill: #a3adb8; }
       .accent { fill: #58a6ff; }
     }
+    /* Keep short labels readable when the image is embedded on a narrow page. */
+    @media (max-width: 520px) {
+      .signature { font-size: 32px; }
+      .profession { font-size: 58px; }
+      .qualifier { font-size: 32px; }
+      .statement { font-size: 66px; }
+      .answer { font-size: 70px; }
+      .step { font-size: 34px; }
+      .stack { font-size: 30px; }
+    }
   </style>
 
-  <rect width="1200" height="740" rx="24" class="bg"/>
+  <rect width="1200" height="740" rx="24" class="background"/>
   <rect x="22" y="22" width="1156" height="696" rx="18" class="frame"/>
 
-  <text x="64" y="72" class="kicker accent">GEORG RYBSKI / FULL-STACK ENGINEER</text>
-  <text x="64" y="133" class="name primary">systems that let software act</text>
-  <text x="64" y="174" class="role secondary">interfaces, APIs, and the machinery underneath.</text>
-  <line x1="64" y1="205" x2="1136" y2="205" class="hairline"/>
+  <text x="84" y="84" class="signature accent">GEORG RYBSKI</text>
+  <text x="84" y="150" class="profession primary">SOFTWARE ENGINEER</text>
+  <text x="84" y="194" class="qualifier secondary">full-stack / systems / automation</text>
+  <path d="M84 232 H1116" class="rule"/>
 
-  <text x="64" y="241" class="lane-label accent">01 / PRODUCT</text>
-  <text x="64" y="281" class="lane-title primary">Build the software.</text>
-  <text x="64" y="315" class="stack secondary">TypeScript / Java / SQL</text>
-  <line x1="592" y1="233" x2="592" y2="318" class="hairline"/>
-  <text x="632" y="241" class="lane-label accent">02 / PLATFORM</text>
-  <text x="632" y="281" class="lane-title primary">Build what builds it.</text>
-  <text x="632" y="315" class="stack secondary">Rust / Nix / Linux</text>
-  <line x1="64" y1="347" x2="1136" y2="347" class="hairline"/>
+  <text x="84" y="330" class="statement primary">Build what builds.</text>
+  <text x="84" y="406" class="answer primary">Own what follows.</text>
 
-  <text x="64" y="393" class="statement primary">I build environments where software can do real work</text>
-  <text x="64" y="433" class="statement primary">without owning the machine.</text>
+  <!-- The four cells share dimensions, padding, and baselines. -->
+  <g transform="translate(84 494)">
+    <rect width="210" height="80" rx="12" class="cell"/>
+    <text x="105" y="50" text-anchor="middle" class="step primary">DEFINE</text>
+  </g>
+  <path d="M306 534 H345 M339 529 L345 534 L339 539" class="flow"/>
+  <g transform="translate(358 494)">
+    <rect width="210" height="80" rx="12" class="cell"/>
+    <text x="105" y="50" text-anchor="middle" class="step primary">BOUND</text>
+  </g>
+  <path d="M580 534 H619 M613 529 L619 534 L613 539" class="flow"/>
 
-  <!-- Equal 188-unit cards, 33-unit gaps, shared text baselines. -->
-  <g transform="translate(64 477)">
-    <rect width="188" height="112" rx="12" class="node"/>
-    <text x="94" y="40" text-anchor="middle" class="node-title primary">INTENT</text>
-    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">human</text>
+  <!-- The execution boundary deliberately excludes validation. -->
+  <rect x="616" y="478" width="242" height="112" rx="18" class="boundary"/>
+  <g transform="translate(632 494)">
+    <rect width="210" height="80" rx="12" class="cell"/>
+    <text x="105" y="50" text-anchor="middle" class="step accent">DELEGATE</text>
   </g>
-  <line x1="258" y1="533" x2="279" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <g transform="translate(285 477)">
-    <rect width="188" height="112" rx="12" class="node"/>
-    <text x="94" y="40" text-anchor="middle" class="node-title primary">POLICY</text>
-    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">scoped access</text>
-  </g>
-  <line x1="479" y1="533" x2="500" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <g transform="translate(506 477)">
-    <rect width="188" height="112" rx="12" class="node"/>
-    <text x="94" y="40" text-anchor="middle" class="node-title primary">RUNTIME</text>
-    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">microVMs</text>
-  </g>
-  <line x1="700" y1="533" x2="721" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <g transform="translate(727 477)">
-    <rect width="188" height="112" rx="12" class="node"/>
-    <text x="94" y="40" text-anchor="middle" class="node-title primary">BUILD</text>
-    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">agents</text>
-  </g>
-  <line x1="921" y1="533" x2="942" y2="533" class="flow" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <g transform="translate(948 477)">
-    <rect width="188" height="112" rx="12" class="node"/>
-    <text x="94" y="40" text-anchor="middle" class="node-title primary">REVIEW</text>
-    <text x="94" y="78" text-anchor="middle" class="node-sub secondary">diffs + tests</text>
+  <path d="M854 534 H893 M887 529 L893 534 L887 539" class="flow"/>
+  <g transform="translate(906 494)">
+    <rect width="210" height="80" rx="12" class="cell"/>
+    <text x="105" y="50" text-anchor="middle" class="step primary">VALIDATE</text>
   </g>
 
-  <line x1="64" y1="623" x2="1136" y2="623" class="hairline"/>
-  <text x="64" y="663" class="footer primary">Give agents room to work, not the keys to everything.</text>
-  <text x="64" y="698" class="micro secondary">AUTONOMY BY DESIGN</text>
-  <text x="1136" y="698" text-anchor="end" class="micro secondary">LEAST PRIVILEGE BY DEFAULT</text>
+  <path d="M84 630 H1116" class="rule"/>
+  <text x="84" y="682" class="stack secondary">rust / nix / linux / typescript</text>
 </svg>
